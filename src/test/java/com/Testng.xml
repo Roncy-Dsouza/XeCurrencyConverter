@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression suite" verbose="1" thread-count="1"  >
+
+    <listeners>
+        <listener class-name="com.testbase.TestListener"></listener>
+    </listeners>
+
+    <test name="Test Case 1 " >
+        <parameter name="platform" value="Web"></parameter>
+        <classes>
+            <class name="com.xeCurrencyconverterTest.XeCurrencyconverterTest"/>
+        </classes>
+    </test>
+<!--    <test name="Test Case 2" >-->
+<!--        <parameter name="platform" value="Mobile"></parameter>-->
+<!--        <classes>-->
+<!--            <class name="com.mobile.mobileTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>
